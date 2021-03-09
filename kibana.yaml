@@ -8,6 +8,10 @@ metadata:
 spec:
   ports:
   - port: 5601
+    targetPort: 5601
+    protocol: TCP
+  externalIPs:
+  - 172.16.3.16
   selector:
     app: kibana
 ---
